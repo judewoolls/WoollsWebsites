@@ -1,3 +1,7 @@
+* {
+    max-width: 100%;
+}
+
 body {
     background-color: #1E1E1E;
     color: #A8A8A8;
@@ -48,6 +52,8 @@ nav a:hover, nav a.active {
     background: repeating-linear-gradient(45deg, #025854, #025854 10px, #1E1E1E 10px, #1E1E1E 20px);
     text-align: center;
     padding: 150px 20px;
+    border-top: #00FFFF 2px solid;
+    border-bottom: #00FFFF 2px solid;
 }
 
 .hero h1 {
@@ -74,6 +80,11 @@ nav a:hover, nav a.active {
     font-weight: 600;
     transition: background-color 0.3s, box-shadow 0.3s;
     border-radius: 5px;
+}
+
+#explore-portfolio-button {
+    text-decoration: none;
+    color: #1E1E1E;
 }
 
 .hero button:hover {
@@ -178,6 +189,15 @@ footer a:hover {
 
 /* Add a media query to change the flex direction on smaller screens */
 @media (max-width: 768px) {
+
+    #heading-title {
+        font-size: 1.9rem;
+    }
+
+    #hero h1 {
+        font-size: 2.2rem;
+    }
+
     footer {
         flex-direction: column;
         justify-content: center;
