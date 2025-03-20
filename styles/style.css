@@ -44,8 +44,8 @@ nav a:hover, nav a.active {
 
 .hero {
     /* background: linear-gradient(to bottom, #2A2A2A, #1E1E1E); */
-    background: linear-gradient(to bottom, #025854, #1E1E1E);
-    /* background: url('../portfolio-image-1.jpeg') center center/cover no-repeat; */
+    /* background: linear-gradient(to bottom, #025854, #1E1E1E); */
+    background: repeating-linear-gradient(45deg, #025854, #025854 10px, #1E1E1E 10px, #1E1E1E 20px);
     text-align: center;
     padding: 150px 20px;
 }
