@@ -1,0 +1,194 @@
+body {
+    background-color: #1E1E1E;
+    color: #A8A8A8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+}
+
+header {
+    background-color: #1E1E1E;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    color: #A8A8A8;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: #00FFFF;
+}
+
+#heading-title {
+    color: #00FFFF;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.hero {
+    /* background: linear-gradient(to bottom, #2A2A2A, #1E1E1E); */
+    background: linear-gradient(to bottom, #025854, #1E1E1E);
+    /* background: url('../portfolio-image-1.jpeg') center center/cover no-repeat; */
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.hero h1 {
+    color: #00FFFF;
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.hero p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.hero button {
+    background-color: #0088FF;
+    color: #1E1E1E;
+    padding: 18px 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    border-radius: 5px;
+}
+
+.hero button:hover {
+    background-color: #00FFFF;
+    box-shadow: 0 0 15px #00FFFF;
+}
+
+.content-section {
+    background-color: #1E1E1E;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.content-section h2 {
+    color: #00FFFF;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+.content-section .services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background-color: #282828;
+    padding: 30px;
+    width: 320px;
+    text-align: left;
+    border: 1px solid #333;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.service-card h3 {
+    color: #00FFFF;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    line-height: 1.6;
+}
+
+.service-card a {
+    color: #00FFFF;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    transition: color 0.3s;
+}
+
+.service-card a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #1E1E1E;
+    padding: 30px 0;
+    text-align: center;
+    border-top: 1px solid #333;
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 30px;
+    flex-wrap: wrap;
+}
+
+footer a {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    font-size: 3rem;
+    line-height: 4rem;
+    text-align: center;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    border-radius: 50%;
+    color: #A8A8A8; /* Ensure the icon color is set */
+}
+
+footer a:hover {
+    color: #00FFFF;
+    text-decoration: none;
+    box-shadow: 0 0 15px #00FFFF;
+    transition: color 0.3s;
+}
+
+#footer-text {
+    color: #A8A8A8;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+/* Add a media query to change the flex direction on smaller screens */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #github-div {
+        order: 1;
+    }
+    #linkedin-div {
+        order: 2;
+    }
+    #footer-text {
+        order: 3;
+    }
+}
