@@ -231,17 +231,27 @@ footer a:hover {
         font-size: 2.5em;
     }
 
+}
+
+@media (max-width: 576px) {
     footer {
-        flex-direction: column;
+        /* flex-direction: column; */
         justify-content: center;
+        flex-basis: 15px;
+        flex-wrap: wrap;
     }
     #github-div {
+        display: inline;
         order: 1;
     }
     #linkedin-div {
         order: 2;
+        display: inline;
     }
     #footer-text {
         order: 3;
+        display: block;
+        width: 100%;
+        text-align: center;
     }
 }
