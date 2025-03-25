@@ -46,6 +46,15 @@ nav a:hover, nav a.active {
     color: #00FFFF;
 }
 
+.nav--mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+
 #heading-title {
     color: #00FFFF;
     font-size: 2.5em;
@@ -201,6 +210,10 @@ footer a:hover {
     nav ul {
         justify-content: space-around;
     } */
+    #navbar {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 
     nav ul li {
         font-size: 1.1em;
@@ -208,8 +221,12 @@ footer a:hover {
 
     #heading-title {
         font-size: 2em;
+        margin-bottom: 0px;
+        margin-left: 10px;
     }
-
+    .hero {
+        padding-top: 80px;
+    }
     .hero h1 {
         font-size: 2.5em;
     }
