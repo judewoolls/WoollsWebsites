@@ -42,6 +42,10 @@ nav a:hover, nav a.active {
     color: #00FFFF;
 }
 
+.active-page {
+    color: #00FFFF;
+}
+
 #heading-title {
     color: #00FFFF;
     font-size: 2.5em;

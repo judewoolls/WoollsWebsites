@@ -2,6 +2,7 @@
     background: linear-gradient(to bottom, #025854, #1E1E1E);
     /* background: repeating-linear-gradient(45deg, #025854, #025854 10px, #1E1E1E 10px, #1E1E1E 20px); */
     background: linear-gradient(to top right, #15aea6, #1E1E1E);
-    /* padding: 80px 20px;
-    text-align: center; */
+    padding: 80px 20px;
+    padding-bottom: 150px;
+    text-align: center;
 }
