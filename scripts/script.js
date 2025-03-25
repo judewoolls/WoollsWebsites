@@ -38,7 +38,7 @@ function setUpNavbar(navbar) {
           <a href="#" class="active-page">Home</a>
         </li>
         <li class="nav-item">
-          <a href="#my-services-section">Services</a>
+          <a href="index.html#my-services-section">Services</a>
         </li>
         <li class="nav-item">
           <a href="portfolio.html">Portfolio</a>
