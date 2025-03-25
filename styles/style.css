@@ -91,7 +91,7 @@ nav a:hover, nav a.active {
     color: rgb(194, 191, 191);
 }
 
-.hero button {
+.hero button, #contact-button {
     background-color: #0088FF;
     color: #1E1E1E;
     padding: 18px 40px;
@@ -103,12 +103,12 @@ nav a:hover, nav a.active {
     border-radius: 5px;
 }
 
-#explore-portfolio-button {
+#explore-portfolio-button, #contact-button {
     text-decoration: none;
     color: #1E1E1E;
 }
 
-.hero button:hover {
+.hero button:hover, #contact-button:hover {
     background-color: #00FFFF;
     box-shadow: 0 0 15px #00FFFF;
 }
