@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 const originalNav = `
     <header id="navbar">
         <nav>
-            <h1 id="heading-title">Woolls Websites</h1>
+            <h1 id="heading-title">WoollsWebsites</h1>
             <ul>
                 <li><a href="index.html" class="active-page myNavLinks">Home</a></li>
                 <li><a href="index.html#my-services-section" class="myNavLinks">Services</a></li>
