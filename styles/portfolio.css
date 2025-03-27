@@ -1,4 +1,5 @@
 .content-section {
     /* background: linear-gradient(to bottom, #025854, #1E1E1E); */
     background: repeating-radial-gradient(circle, #1E1E1E, #025854, #28d4cb);
+    border-top: #00FFFF 2px solid;
 }
