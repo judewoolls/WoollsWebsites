@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #1E1E1E;
+    background-color: white;
     color: #A8A8A8;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -12,14 +12,23 @@ body {
 }
 
 header {
-    background-color: #1E1E1E;
+    background-color: white;
     padding: 20px 0;
     text-align: center;
     border-bottom: 1px solid #333;
 }
 
 #navbar {
-    background-color: #1E1E1E !important;
+    background-color: #fbfbfb !important;
+    border: none !important;
+}
+
+#header-logo {
+    color: #00FFFF;
+    font-size: 2.5em;
+    font-weight: 600;
+    text-decoration: none;
+    background: none;
 }
 
 nav ul {
@@ -37,7 +46,7 @@ nav ul li {
 }
 
 nav a {
-    color: #A8A8A8;
+    color: black;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -69,7 +78,7 @@ nav a:hover, nav a.active {
 .hero {
     /* background: linear-gradient(to bottom, #2A2A2A, #1E1E1E); */
     /* background: linear-gradient(to bottom, #025854, #1E1E1E); */
-    background: repeating-linear-gradient(45deg, #025854, #025854 10px, #1E1E1E 10px, #1E1E1E 20px);
+    /* background: repeating-linear-gradient(45deg, #025854, #025854 10px, #1E1E1E 10px, #1E1E1E 20px); */
     text-align: center;
     padding: 150px 20px;
     border-top: #00FFFF 2px solid;
@@ -88,7 +97,7 @@ nav a:hover, nav a.active {
     margin-bottom: 40px;
     max-width: 800px;
     margin: 0 auto 40px;
-    color: rgb(194, 191, 191);
+    color: black;
 }
 
 .hero button, #contact-button {
@@ -114,7 +123,7 @@ nav a:hover, nav a.active {
 }
 
 .content-section {
-    background-color: #1E1E1E;
+    background-color: white;
     padding: 80px 20px;
     text-align: center;
 }
@@ -136,7 +145,7 @@ nav a:hover, nav a.active {
 }
 
 .service-card {
-    background-color: #282828;
+    background-color: white;
     padding: 30px;
     width: 320px;
     text-align: left;
@@ -158,6 +167,7 @@ nav a:hover, nav a.active {
 
 .service-card p {
     line-height: 1.6;
+    color: black;
 }
 
 .service-card a {
@@ -173,7 +183,7 @@ nav a:hover, nav a.active {
 }
 
 footer {
-    background-color: #1E1E1E;
+    background-color: rgb(197, 196, 196);
     padding: 30px 0;
     text-align: center;
     border-top: 1px solid #333;
