@@ -18,6 +18,32 @@ header {
     border-bottom: 1px solid #333;
 }
 
+
+.intro-modal {
+    display: grid;
+    grid-template-rows: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    min-width: 100%;
+    transition: all 3s ease;
+}
+
+.intro-modal-end {
+    grid-template-rows: 200px;
+}
+
+.logo-start {
+    transform: scale(2);
+    transition: transform 0.3s ease;
+}
+
+.logo-end {
+    transform: scale(1);
+    transition: transform 0.6s ease;
+    transition-delay: 400ms;
+}
+
 #navbar {
     background-color: #ffffff !important;
     border: none !important;
