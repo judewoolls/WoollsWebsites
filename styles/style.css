@@ -220,12 +220,29 @@ nav a:hover, nav a.active {
 }
 
 #contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     background-color: white;
     align-self: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    min-height: 40vh;
+    min-height: 50vh;
+    min-width: 40%;
+}
+
+#form-submit-button {
+    background-color: #38b6ff;
+    color: #1E1E1E;
+    border: none;
+    cursor: pointer;
+    padding: 5px 0px;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+    max-width: 25%;
 }
 
 footer {
