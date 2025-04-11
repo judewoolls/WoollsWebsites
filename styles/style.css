@@ -19,7 +19,7 @@ header {
 }
 
 #navbar {
-    background-color: #fbfbfb !important;
+    background-color: #ffffff !important;
     border: none !important;
 }
 
@@ -29,6 +29,7 @@ header {
     font-weight: 600;
     text-decoration: none;
     background: none;
+    max-height: 500px;
 }
 
 nav ul {
@@ -52,11 +53,11 @@ nav a {
 }
 
 nav a:hover, nav a.active {
-    color: #00FFFF;
+    color: #38b6ff;
 }
 
 .active-page {
-    color: #00FFFF;
+    color: #38b6ff;
 }
 
 .nav--mobile {
@@ -81,12 +82,12 @@ nav a:hover, nav a.active {
     /* background: repeating-linear-gradient(45deg, #025854, #025854 10px, #1E1E1E 10px, #1E1E1E 20px); */
     text-align: center;
     padding: 150px 20px;
-    border-top: #00FFFF 2px solid;
-    border-bottom: #00FFFF 2px solid;
+    border-top: #38b6ff 2px solid;
+    border-bottom: #38b6ff 2px solid;
 }
 
 .hero h1 {
-    color: #00FFFF;
+    color: #38b6ff;
     font-size: 3.5em;
     margin-bottom: 20px;
     font-weight: 600;
@@ -101,7 +102,7 @@ nav a:hover, nav a.active {
 }
 
 .hero button, #contact-button {
-    background-color: #0088FF;
+    background-color: #38b6ff;
     color: #1E1E1E;
     padding: 18px 40px;
     border: none;
@@ -129,7 +130,7 @@ nav a:hover, nav a.active {
 }
 
 .content-section h2 {
-    color: #00FFFF;
+    color: #38b6ff;
     font-size: 2.5em;
     margin-bottom: 50px;
     font-weight: 600;
@@ -160,7 +161,7 @@ nav a:hover, nav a.active {
 }
 
 .service-card h3 {
-    color: #00FFFF;
+    color: #38b6ff;
     font-size: 1.8em;
     margin-bottom: 15px;
 }
@@ -171,7 +172,7 @@ nav a:hover, nav a.active {
 }
 
 .service-card a {
-    color: #00FFFF;
+    color: #38b6ff;
     text-decoration: none;
     display: inline-block;
     margin-top: 20px;
