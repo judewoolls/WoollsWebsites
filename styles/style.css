@@ -166,6 +166,7 @@ nav a:hover, nav a.active {
     /* background: linear-gradient(to bottom, #2A2A2A, #1E1E1E); */
     /* background: linear-gradient(to bottom, #025854, #1E1E1E); */
     /* background: repeating-linear-gradient(45deg, #025854, #025854 10px, #1E1E1E 10px, #1E1E1E 20px); */
+    width: 100vw;
     text-align: center;
     padding: 150px 20px;
     border-top: #38b6ff 2px solid;
@@ -231,43 +232,11 @@ nav a:hover, nav a.active {
     margin: 0 auto;
 }
 
-.service-card {
-    background-color: white;
-    padding: 30px;
-    width: 320px;
-    text-align: left;
-    border: 1px solid #333;
-    border-radius: 8px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
+/* #my-services-section {
+    background: url('../images/cards/a\ man\ writing\ code.png') center center fixed;
+    background-size: cover;
+} */
 
-.service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-}
-
-.service-card h3 {
-    color: #38b6ff;
-    font-size: 1.8em;
-    margin-bottom: 15px;
-}
-
-.service-card p {
-    line-height: 1.6;
-    color: black;
-}
-
-.service-card a {
-    color: #38b6ff;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 20px;
-    transition: color 0.3s;
-}
-
-.service-card a:hover {
-    text-decoration: underline;
-}
 
 .form {
     display: flex;
