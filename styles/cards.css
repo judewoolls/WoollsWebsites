@@ -20,6 +20,26 @@
     background-size: cover;
 }
 
+#classfit-card {
+    background: url('../images/cards/a\ coach\ helping\ their\ new\ client\ in\ CrossFit.png');
+    background-size: cover;
+}
+
+#blockflow-card {
+    background: url('../images/cards/arcade\ retro\ machine\ without\ kids.png');
+    background-size: cover;
+}
+
+#messageboard-card {
+    background: url('../images/cards/notice\ board.png');
+    background-size: cover;
+}
+
+#fullfillmenthub-card {
+    background: url('../images/cards/spa\ retreat.png');
+    background-size: cover;
+}
+
 .card {
     min-height: 400px;
     /* background-image: url('../images/cards/a\ man\ writing\ code.png'); */
