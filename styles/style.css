@@ -229,7 +229,7 @@ nav a:hover, nav a.active {
 
 .content-section .services {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
     max-width: 1200px;
@@ -359,4 +359,11 @@ footer a:hover {
         width: 100%;
         text-align: center;
     }
+}
+
+@media screen and (min-width: 992px) {
+    .content-section .services {
+        justify-content: space-around;
+    }
+    
 }
