@@ -166,6 +166,10 @@ nav a:hover, nav a.active {
     /* background: linear-gradient(to bottom, #2A2A2A, #1E1E1E); */
     /* background: linear-gradient(to bottom, #025854, #1E1E1E); */
     /* background: repeating-linear-gradient(45deg, #025854, #025854 10px, #1E1E1E 10px, #1E1E1E 20px); */
+    background: url('../images/cards/keyboard\ with\ a\ light\ color\ scheme.png') bottom 50% center fixed;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: cover;
     width: 100vw;
     text-align: center;
     padding: 150px 20px;
@@ -174,7 +178,7 @@ nav a:hover, nav a.active {
 }
 
 .hero h1 {
-    color: #38b6ff;
+    color: white;
     font-size: 3.5em;
     margin-bottom: 20px;
     font-weight: 600;
@@ -185,7 +189,7 @@ nav a:hover, nav a.active {
     margin-bottom: 40px;
     max-width: 800px;
     margin: 0 auto 40px;
-    color: black;
+    color: #ffffff;
 }
 
 .hero button, #contact-button {
@@ -225,17 +229,12 @@ nav a:hover, nav a.active {
 
 .content-section .services {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
 }
-
-/* #my-services-section {
-    background: url('../images/cards/a\ man\ writing\ code.png') center center fixed;
-    background-size: cover;
-} */
 
 
 .form {
