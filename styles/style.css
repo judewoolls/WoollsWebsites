@@ -251,7 +251,7 @@ nav a:hover, nav a.active {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background-color: #38b6ff;
+    background-color: black;
     color: white;
     padding-bottom: 40px;
     padding-top: 20px;
@@ -264,13 +264,24 @@ nav a:hover, nav a.active {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    min-height: 50vh;
+    min-height: 60vh;
     min-width: 40%;
 }
 
+#contact-form input[type="text"],
+#contact-form input[type="email"] {
+    padding: 10px;
+    max-width: 50ch;
+}
+
+#contact-form textarea {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 #form-submit-button {
-    background-color: #ffffff;
-    color: #1E1E1E;
+    background-color: white;
+    color: black;
     border: none;
     cursor: pointer;
     padding: 5px 0px;
@@ -279,7 +290,15 @@ nav a:hover, nav a.active {
     transition: background-color 0.3s, box-shadow 0.3s;
     border-radius: 10px;
     max-width: 25%;
+    transition: all 0.3s ease-in-out;
 }
+
+#form-submit-button:hover {
+    background-color: #38b6ff;
+    color: white;
+    box-shadow: 0 0 15px #38b6ff;
+}
+
 
 footer {
     background-color: rgb(197, 196, 196);
