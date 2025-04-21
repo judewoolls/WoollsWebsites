@@ -280,7 +280,7 @@ nav a:hover, nav a.active {
     flex-direction: column;
     justify-content: space-around;
     min-height: 60vh;
-    min-width: 40%;
+    min-width: 60%;
 }
 
 #contact-form input[type="text"],
@@ -427,7 +427,7 @@ footer a:hover,
 
 
     #contact-form {
-        min-width: 70%;
+        min-width: 90%;
     }
 
     #form-submit-button {
