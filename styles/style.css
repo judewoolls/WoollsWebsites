@@ -172,6 +172,8 @@ nav a:hover, nav a.active {
     padding: 150px 20px;
     text-align: center;
     position: relative;
+    border-top: #38b6ff 2px solid;
+    border-bottom: #38b6ff 2px solid;
 }
 
 .hero > * {
@@ -429,20 +431,23 @@ footer a:hover,
 
     .hero {
         background: url('https://woollswebsites.co.uk/images/cards/keyboard.png') bottom 50% center fixed;
-        background-blend-mode: multiply;
-        background-color: #38b6ff;
         background-size: cover;
         width: 100vw;
-        text-align: center;
         padding: 150px 20px;
-        border-top: #38b6ff 2px solid;
-        border-bottom: #38b6ff 2px solid;
+        text-align: center;
+        position: relative;
+
     }
 
-    .hero:before {
-        background-color: none;
+    .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #38b6ff7b
     }
-    
 }
 
 @media screen and (max-width: 992px) {
