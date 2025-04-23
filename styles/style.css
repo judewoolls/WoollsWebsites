@@ -423,6 +423,8 @@ footer a:hover,
 
     .hero {
         background: url('https://woollswebsites.co.uk/images/keyboard-small.png') bottom 50% center fixed;
+        background-color: #38b6ff;
+        background-size: cover;
 
     }
 
