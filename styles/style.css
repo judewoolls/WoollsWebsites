@@ -422,11 +422,12 @@ footer a:hover,
 @media screen and (max-width: 992px) {
 
     .hero {
-        background: url('https://woollswebsites.co.uk/images/keyboard-small.png') bottom 50% center fixed;
+        background: url('https://woollswebsites.co.uk/images/Woolls-logo-smaller.jpeg') bottom 50% center fixed;
         background-blend-mode: multiply;
         background-color: #38b6ffab;
         background-size: cover;
-
+        width: 100vw;
+        text-align: center;
     }
 
     .form {
