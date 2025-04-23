@@ -382,7 +382,7 @@ footer a:hover,
     }
     .hero {
         background: url('https://woollswebsites.co.uk/images/keyboard-smaller.jpeg') center center fixed;
-        background-blend-mode: overlay;
+        background-blend-mode: color-burn;
         background-color: #1195e2c5;
         background-size: cover;
         width: 100vw;
