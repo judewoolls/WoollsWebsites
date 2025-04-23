@@ -166,7 +166,7 @@ nav a:hover, nav a.active {
     /* background: linear-gradient(to bottom, #2A2A2A, #1E1E1E); */
     /* background: linear-gradient(to bottom, #025854, #1E1E1E); */
     /* background: repeating-linear-gradient(45deg, #025854, #025854 10px, #1E1E1E 10px, #1E1E1E 20px); */
-    background: url('https://woollswebsites.co.uk/images/cards/keyboard.png') bottom 50% center fixed;
+    background: url('../images/cards/keyboard.png') bottom 50% center fixed;
     background-blend-mode: multiply;
     background-color: #38b6ff;
     background-size: cover;
@@ -422,7 +422,7 @@ footer a:hover,
 @media screen and (max-width: 992px) {
 
     .hero {
-        background: url('https://woollswebsites.co.uk/images/keyboard-small.png') bottom 50% center fixed;
+        background: url('../images/keyboard-small.png') bottom 50% center fixed;
         background-color: #38b6ff;
         background-size: cover;
 
