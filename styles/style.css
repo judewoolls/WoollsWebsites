@@ -382,12 +382,26 @@ footer a:hover,
     }
     .hero {
         background: url('https://woollswebsites.co.uk/images/keyboard-smaller.jpeg') center center fixed;
-        background-blend-mode: color-burn;
-        background-color: rgba(0, 0, 0, 0.3);
         background-size: cover;
         width: 100vw;
         text-align: center;
+        position: relative;
     }
+
+    .hero > * {
+        position: relative;
+        z-index: 1;
+    }
+    .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #38b6ff7b
+    }
+
     .hero h1 {
         font-size: 2.5em;
     }
