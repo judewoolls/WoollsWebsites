@@ -166,15 +166,27 @@ nav a:hover, nav a.active {
     /* background: linear-gradient(to bottom, #2A2A2A, #1E1E1E); */
     /* background: linear-gradient(to bottom, #025854, #1E1E1E); */
     /* background: repeating-linear-gradient(45deg, #025854, #025854 10px, #1E1E1E 10px, #1E1E1E 20px); */
-    background: url('https://woollswebsites.co.uk/images/cards/keyboard.png') bottom 50% center fixed;
-    background-blend-mode: multiply;
-    background-color: #38b6ff;
+    background: url('https://woollswebsites.co.uk/images/keyboard-smaller.jpeg') center center fixed;
     background-size: cover;
     width: 100vw;
-    text-align: center;
     padding: 150px 20px;
-    border-top: #38b6ff 2px solid;
-    border-bottom: #38b6ff 2px solid;
+    text-align: center;
+    position: relative;
+}
+
+.hero > * {
+    position: relative;
+    z-index: 1;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #38b6ff7b
 }
 
 .hero h1 {
@@ -380,27 +392,6 @@ footer a:hover,
         margin-bottom: 0px;
         margin-left: 10px;
     }
-    .hero {
-        background: url('https://woollswebsites.co.uk/images/keyboard-smaller.jpeg') center center fixed;
-        background-size: cover;
-        width: 100vw;
-        text-align: center;
-        position: relative;
-    }
-
-    .hero > * {
-        position: relative;
-        z-index: 1;
-    }
-    .hero::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #38b6ff7b
-    }
 
     .hero h1 {
         font-size: 2.5em;
@@ -434,6 +425,22 @@ footer a:hover,
 @media screen and (min-width: 992px) {
     .content-section .services {
         justify-content: space-around;
+    }
+
+    .hero {
+        background: url('https://woollswebsites.co.uk/images/cards/keyboard.png') bottom 50% center fixed;
+        background-blend-mode: multiply;
+        background-color: #38b6ff;
+        background-size: cover;
+        width: 100vw;
+        text-align: center;
+        padding: 150px 20px;
+        border-top: #38b6ff 2px solid;
+        border-bottom: #38b6ff 2px solid;
+    }
+
+    .hero:before {
+        background-color: none;
     }
     
 }
