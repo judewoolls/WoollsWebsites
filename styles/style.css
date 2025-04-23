@@ -381,8 +381,9 @@ footer a:hover,
         margin-left: 10px;
     }
     .hero {
-        background: url('https://woollswebsites.co.uk/images/keyboard-smaller.jpeg') bottom 50% center;
+        background: url('https://woollswebsites.co.uk/images/keyboard-smaller.jpeg') center center fixed;
         background-blend-mode: multiply;
+        background-color: #38b6ffab;
         background-size: cover;
         width: 100vw;
         text-align: center;
