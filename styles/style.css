@@ -304,8 +304,10 @@ nav a:hover, nav a.active {
 }
 
 #contact-form textarea {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 20ch;
+    width: 100%;
 }
 
 #contact-form textarea,
@@ -313,6 +315,19 @@ nav a:hover, nav a.active {
 #contact-form input[type="email"] {
     border-radius: 10px;
 } 
+
+form > h3 {
+    color: #38b6ff;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+label {
+    color: #38b6ff;
+    font-size: 1.2em;
+    font-weight: 600;
+}
 
 #form-submit-button {
     background-color: white;
