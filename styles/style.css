@@ -520,6 +520,35 @@ footer a:hover,
         box-shadow: none !important;
     }
 
+    .contacts-start {
+        transform: translateX(0);
+        opacity: 1;
+        transition: transform 0.01ms !important;
+        transition-delay: 0ms;
+    }
+    .contacts-start-2 {
+        transform: translateX(0);
+        opacity: 1;
+        transition: transform 0.01ms !important;
+        transition-delay: 0ms;
+    }
+
+    
+    .contacts-end {
+        transform: translateX(0);
+        opacity: 1;
+        transition: transform 0.01ms !important;
+        transition-delay: 0ms;
+    }
+    
+    
+    .contacts-end-2 {
+        transform: translateX(0);
+        opacity: 1;
+        transition: transform 0.01ms !important;
+        transition-delay: 0ms;
+    }
+
     #form-submit-button:hover {
         box-shadow: none !important;
     }
