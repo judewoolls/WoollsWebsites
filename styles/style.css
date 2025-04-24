@@ -427,6 +427,11 @@ footer a:hover,
         background-attachment: scroll;
     }
 
+    #form-submit-button {
+        background-color: #38b6ff;
+        color: white;
+    }
+
 }
 
 @media (max-width: 576px) {
