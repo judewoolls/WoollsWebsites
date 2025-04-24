@@ -69,39 +69,6 @@
 
 }
 
-@media (hover) {
-    .card-content {
-        transform: translateY(65%);
-        transition: transform 0.5s ease;
-    }
-    .card:hover .card-content,
-.card:focus-within .card-content {
-    transform: translateY(0);
-    transition-delay: 500ms;
-}
-
-.card:focus-within .card-content {
-    transition-duration: 0ms;
-}
-
-.card-content > *:not(.card-title) {
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-.card:hover .card-content > *:not(.card-title) {
-    opacity: 1;
-    transition-delay: 800ms;
-}
-
-.card:focus-within .card-content > *:not(.card-title) {
-    opacity: 1;
-    transition-delay: 300ms;
-}
-    
-}
-
-
 .card-title {
     color: #00FFFF;
     width: max-content;
@@ -118,7 +85,6 @@
     position: absolute;
     bottom: -2px;
     left: calc(var(--padding) * -1);
-    transform: scaleX(0);
     transform-origin: left;
 }
 
@@ -150,4 +116,63 @@
     background-color: #38b6ff;
     box-shadow: 0 0 15px #38b6ff;
     color: black;
+}
+
+
+@media (hover) {
+    .card-content {
+        transform: translateY(65%);
+        transition: transform 0.5s ease;
+    }
+    .card:hover .card-content,
+.card:focus-within .card-content {
+    transform: translateY(0);
+    transition-delay: 500ms;
+}
+
+.card:focus-within .card-content {
+    transition-duration: 0ms;
+}
+
+.card-content > *:not(.card-title) {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.card:hover .card-content > *:not(.card-title) {
+    opacity: 1;
+    transition-delay: 800ms;
+}
+
+.card:focus-within .card-content > *:not(.card-title) {
+    opacity: 1;
+    transition-delay: 300ms;
+}
+
+.card-title::after {
+    transform: scaleX(0);
+}
+    
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;;
+        scroll-behavior: auto !important;
+        animation-delay: 0.01ms !important;
+    }
+
+    .card:hover {
+        transform: scale(1) !important;
+        transition: none !important;
+    }
+
+    .card-button:hover {
+        box-shadow: none !important;
+    }
+
 }

@@ -172,8 +172,8 @@ nav a:hover, nav a.active {
     padding: 150px 20px;
     text-align: center;
     position: relative;
-    border-top: #38b6ff 2px solid;
-    border-bottom: #38b6ff 2px solid;
+    border-top: #38b6ff 4px solid;
+    border-bottom: #38b6ff 4px solid;
 }
 
 .hero > * {
@@ -471,4 +471,38 @@ footer a:hover,
         font-size: medium;
     }
 
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+
+    .intro-modal {
+        transition: none !important;
+        grid-template-rows: 150px !important;
+    }
+
+    .logo-start, .logo-end {
+        transition: none !important;
+    }
+
+    .logo-start {
+        transform: scale(1) !important;
+    }
+
+    .hero button:hover, #contact-button:hover {
+        box-shadow: none !important;
+    }
+
+    #form-submit-button:hover {
+        box-shadow: none !important;
+    }
+
+    footer a:hover, .contact-card > a:hover {
+        box-shadow: none !important;
+    }
 }
