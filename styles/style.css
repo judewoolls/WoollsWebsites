@@ -174,6 +174,32 @@ header {
     font-weight: 600;
     transition: background-color 0.3s, box-shadow 0.3s;
     border-radius: 5px;
+    border: #1E1E1E 2px solid;
+}
+
+#hero-button {
+    background-color: white;
+    color: #333;
+    border-color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.hero > a {
+    text-decoration: none;
+    color: #333;
+    transition: all 0.5s ease-in-out;
+}
+
+#hero-button:hover {
+    background-color: #38b6ff;
+    color: white;
+    border-color: #38b6ff;
+    box-shadow: 0 0 15px #38b6ff;
+
+}
+
+a > #hero-button:hover {
+    color: white;
 }
 
 #explore-portfolio-button, #contact-button {
