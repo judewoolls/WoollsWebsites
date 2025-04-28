@@ -14,6 +14,7 @@
     <link rel="shortcut icon" href="images/icons8-alphabet-67.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/cards.css">
+    <link rel="stylesheet" href="styles/modals.css">
 </head>
 
 <body>
@@ -25,6 +26,16 @@
             </div>
         </nav>
     </header>
+
+    <section class="info-modal">
+        <div class="info-modal-content">
+            <h2>Welcome to WoollsWebsites</h2>
+            <p>I'm Jude Woolls, a passionate web developer dedicated to crafting exceptional digital experiences. With a
+                focus on front-end and back-end development, I bring your ideas to life through innovative solutions.
+                Let's collaborate and create something amazing together!</p>
+            <button id="modal-close">Close</button>
+        </div>
+    </section>
 
     <section class="hero">
         <h1>Crafting Digital Experiences</h1>
@@ -42,7 +53,7 @@
                     <h3 class="card-title">Front-End Development</h3>
                     <p class="card-body">Creating responsive and visually appealing user interfaces using modern
                         technologies to elevate your business.</p>
-                    <a class="card-button" href="#projects">Learn More</a>
+                    <a class="card-button modal-open">Learn More</a>
                 </div>
             </div>
             <div class="service-card card" id="backend-card">
@@ -111,9 +122,9 @@
         <h2>Contact Me</h2>
         <div class="contacts">
             <div class="contact-card contacts-start" data-contact="1">
-                <a href="https://www.fiverr.com/kaputiowa28050/create-a-modern-an-responsive-restaurant-website?context_referrer=search_gigs&source=top-bar&ref_ctx_id=164f33f15fa64a8ba836ff9daa4ce384&pckg_id=1&pos=1&context_type=auto&funnel=164f33f15fa64a8ba836ff9daa4ce384&seller_online=true&imp_id=d71816a9-714b-4c0e-9e04-3deec4c2cae4" target="_blank" rel="noopener noreferrer"
-                alt="Link to LinkedIn" name="fiverr">
-                <i class="fa-solid fa-cart-shopping"></i>
+                <a href="https://www.fiverr.com/kaputiowa28050/create-a-modern-an-responsive-restaurant-website?context_referrer=search_gigs&source=top-bar&ref_ctx_id=164f33f15fa64a8ba836ff9daa4ce384&pckg_id=1&pos=1&context_type=auto&funnel=164f33f15fa64a8ba836ff9daa4ce384&seller_online=true&imp_id=d71816a9-714b-4c0e-9e04-3deec4c2cae4"
+                    target="_blank" rel="noopener noreferrer" alt="Link to LinkedIn" name="fiverr">
+                    <i class="fa-solid fa-cart-shopping"></i>
                 </a>
                 <p>Use fiverr to make a request</p>
             </div>
@@ -145,7 +156,8 @@
 
     <footer>
         <div id="github-div">
-            <a href="http://github.com/judewoolls/" target="_blank" rel="noopener noreferrer" alt="Link to GitHub" name="github">
+            <a href="http://github.com/judewoolls/" target="_blank" rel="noopener noreferrer" alt="Link to GitHub"
+                name="github">
                 <i class="fa-brands fa-github"></i>
             </a>
         </div>
@@ -162,6 +174,7 @@
 
     <script src="https://kit.fontawesome.com/e2a727411d.js" crossorigin="anonymous"></script>
     <script src="scripts/script.js"></script>
+    <script src="scripts/modal.js"></script>
 
 </body>
 

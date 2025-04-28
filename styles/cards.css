@@ -118,6 +118,10 @@
     color: black;
 }
 
+#coming-soon-card {
+    background-color: black;
+}
+
 
 @media (hover) {
     .card-content {
