@@ -247,6 +247,44 @@ a > #hero-button:hover {
     margin: 0 auto;
 }
 
+#about-me {
+    font-size: 1.4rem;
+    color: black;
+    background-color: white;
+}
+
+#about-me h2 > span {
+    color: #38b6ff;
+}
+
+#about-me > * {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.about-card-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 75ch;
+    margin: 0 auto;
+}
+
+.about-card {
+    border-radius: 10px;
+    background-color: #1E1E1E;
+    padding: 80px;
+    color: white;
+}
+
+.about-card > h3 {
+    color: #38b6ff;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
 #projects {
     margin-top: -100px;
 }
