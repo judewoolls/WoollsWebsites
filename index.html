@@ -29,8 +29,8 @@
 
     <section class="info-modal">
         <div class="info-modal-content">
-            <h2>Welcome to WoollsWebsites</h2>
-            <p>I'm Jude Woolls, a passionate web developer dedicated to crafting exceptional digital experiences. With a
+            <h2 id="modal-title">Welcome to WoollsWebsites</h2>
+            <p id="modal-p">I'm Jude Woolls, a passionate web developer dedicated to crafting exceptional digital experiences. With a
                 focus on front-end and back-end development, I bring your ideas to life through innovative solutions.
                 Let's collaborate and create something amazing together!</p>
             <button id="modal-close">Close</button>
@@ -53,7 +53,7 @@
                     <h3 class="card-title">Front-End Development</h3>
                     <p class="card-body">Creating responsive and visually appealing user interfaces using modern
                         technologies to elevate your business.</p>
-                    <a class="card-button modal-open">Learn More</a>
+                    <a class="card-button modal-open" data-modal="1">Learn More</a>
                 </div>
             </div>
             <div class="service-card card" id="backend-card">
@@ -61,16 +61,15 @@
                     <h3 class="card-title">Back-End Development</h3>
                     <p class="card-body">Building robust and scalable server-side applications using Django, PostgreSQL,
                         and more.</p>
-                    <a class="card-button modal-open">Learn More</a>
+                    <a class="card-button modal-open" data-modal="2">Learn More</a>
                 </div>
             </div>
             <div class="service-card card" id="uiux-card">
                 <div class="card-content">
-                    <h3 class="card-title">Web Design & UI/UX</h3>
-                    <p class="card-body">Designing intuitive and visually appealing websites that enhance user
-                        experience and drive results.
+                    <h3 class="card-title">Full-stack Development</h3>
+                    <p class="card-body">Combining front-end and back-end expertise to deliver seamless, fully integrated web applications that meet your business needs.
                     </p>
-                    <a class="card-button modal-open">See Projects</a>
+                    <a class="card-button modal-open" data-modal="3">See Projects</a>
                 </div>
             </div>
         </div>
