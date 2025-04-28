@@ -165,7 +165,7 @@ header {
     font-weight: 600;
 }
 
-.hero button, #contact-button {
+.hero button, #contact-button, #services-contact-button {
     background-color: #38b6ff;
     color: #1E1E1E;
     padding: 18px 40px;
@@ -176,6 +176,18 @@ header {
     transition: background-color 0.3s, box-shadow 0.3s;
     border-radius: 5px;
     border: #1E1E1E 2px solid;
+}
+
+#services-contact-button {
+    background-color: #38b6ff;
+    color: white;
+    border: none;
+}
+
+#services-contact-button:hover {
+    background-color: #00FFFF;
+    color: white;
+    box-shadow: 0 0 15px #00FFFF;
 }
 
 #hero-button {
@@ -233,6 +245,10 @@ a > #hero-button:hover {
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+#projects {
+    margin-top: -100px;
 }
 
 .contacts {
