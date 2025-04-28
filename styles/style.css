@@ -268,14 +268,14 @@ a > #hero-button:hover {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    max-width: 75ch;
     margin: 0 auto;
 }
 
 .about-card {
     border-radius: 10px;
+    max-width: 30%;
     background-color: #1E1E1E;
-    padding: 80px;
+    padding: 10px;
     color: white;
 }
 
@@ -480,6 +480,16 @@ footer a:hover,
 
     .hero {
         background-attachment: scroll;
+    }
+
+    .about-card-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-card {
+        max-width: 100%;
+        padding: 20px;
     }
 
     #form-submit-button {
