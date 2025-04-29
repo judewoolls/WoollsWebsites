@@ -14,21 +14,24 @@ if (prefersReducedMotion) {
 } else {
     // Otherwise, animate the title
     const titleObserver = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            let interval;
-            let count;
-            if (entry.isIntersecting && animationComplete === false) {
-                count = 0;
-                interval = setInterval(() => {
-                    titleSpan.innerHTML += `<span>${titleLetters[count]}</span>`;
-                    count++;
-                    if (count === titleLetters.length) {
-                        animationComplete = true;
-                        clearInterval(interval);
-                    }
-                }, 50);
-            }
-        });
+        setTimeout(() => {
+            entries.forEach((entry) => {
+                let interval;
+                let count;
+                if (entry.isIntersecting && animationComplete === false) {
+                    count = 0;
+                    interval = setInterval(() => {
+                        titleSpan.innerHTML += `<span>${titleLetters[count]}</span>`;
+                        count++;
+                        if (count === titleLetters.length) {
+                            animationComplete = true;
+                            clearInterval(interval);
+                        }
+                    }, 50);
+                }
+            });
+        }, 300);
+
     });
 
     const titleSection = document.querySelectorAll('#about-me');
