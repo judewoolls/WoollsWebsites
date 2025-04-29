@@ -18,22 +18,12 @@ document.querySelectorAll('.modal-open').forEach((el) => {
     const modal = document.querySelector('.info-modal');
     modal.classList.add('active-modal');
 
-    if (el.dataset.modal === '1') {
-      const modalTitle = document.querySelector('#modal-title');
-      modalTitle.innerText = modalContent[0].title;
-      const modalTextSection = document.querySelector('#modal-p');
-      modalTextSection.innerText = modalContent[0].text;
-    } else if (el.dataset.modal === '2') {
-      const modalTitle = document.querySelector('#modal-title');
-      modalTitle.innerText = modalContent[1].title;
-      const modalTextSection = document.querySelector('#modal-p');
-      modalTextSection.innerText = modalContent[1].text;
-    } else if (el.dataset.modal === '3') {
-      const modalTitle = document.querySelector('#modal-title');
-      modalTitle.innerText = modalContent[2].title;
-      const modalTextSection = document.querySelector('#modal-p');
-      modalTextSection.innerText = modalContent[2].text;
-    }
+    const modalNumber = parseInt(el.dataset.modal) - 1;
+    const modalTitle = document.querySelector('#modal-title');
+    modalTitle.innerText = modalContent[modalNumber].title;
+    const modalTextSection = document.querySelector('#modal-p');
+    modalTextSection.innerText = modalContent[modalNumber].text;
+
   });
 });
 
