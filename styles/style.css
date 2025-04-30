@@ -271,14 +271,17 @@ a > #hero-button:hover {
     margin: 0 auto;
 }
 
-.about-card {
+.about-card  button{
     border-radius: 10px;
     background-color: #38b6ff;
-    padding: 10px;
+    font-size: 1.2rem;
+    padding: 20px;
     color: white;
+    outline: none;
+    border: none;
 }
 
-.about-card:hover {
+.about-card button:hover {
     background-color: #00FFFF;
     box-shadow: 0 0 15px #00FFFF;
     cursor: pointer;

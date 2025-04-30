@@ -33,6 +33,32 @@
     display: block;
 }
 
+#modal-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+#modal-list li {
+    display: flex;
+    align-items: flex-start; /* Align the icon and text at the top */
+    gap: 1rem; /* Add spacing between the icon and the text */
+}
+
+#modal-list li i {
+    color: #38b6ff;
+    font-size: 1.5rem;
+    flex-shrink: 0; /* Prevent the icon from shrinking */
+}
+
+#modal-list li p {
+    margin: 0; /* Remove default margins */
+    color: #333;
+    line-height: 1.5; /* Adjust line height for better readability */
+    flex: 1; /* Allow the text to take up remaining space */
+}
+
 #modal-close {
     cursor: pointer;
     padding: 0.8rem 1rem;

@@ -26,10 +26,10 @@
 
 
     <title>WoollsWebsites</title>
-<link rel="apple-touch-icon" sizes="180x180" href="images/icons/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon/favicon-16x16.png">
-<link rel="manifest" href="images/icons/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/icons/favicon/site.webmanifest">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/cards.css">
     <link rel="stylesheet" href="styles/modals.css">
@@ -49,6 +49,7 @@
         <div class="info-modal-content">
             <h2 id="modal-title"></h2>
             <p id="modal-p"></p>
+            <div id="modal-list"></div>
             <button id="modal-close">Close</button>
         </div>
     </section>
@@ -63,22 +64,25 @@
 
     <section class="content-section" id="about-me">
         <h2><span id="title-span"></span></h2>
-        <div class="about-container">
+        <div class="about-container about-card">
             <p>
                 Let's face it, your website should be more than just a digital brochure – it should be a valuable asset.
                 I'm Jude Woolls, and I founded WoollsWebsites with the goal of helping individuals and businesses build
                 online presences that genuinely work for them, driving results and enhancing their impact.
             </p>
+            <p>Click on the buttons below to find out more about me</p>
             <div class="about-card-section">
                 <div class="about-card modal-open" data-modal="4">
-                    <h3>Where Did I learn?</h3>
+                    <button>Where Did I learn?</button>
                 </div>
                 <div class="about-card modal-open" data-modal="5">
-                    <h3>About The Technologies</h3>
+                    <button>About The Technologies</button>
                 </div>
                 <div class="about-card modal-open" data-modal="6">
-                    <h3 modal-open>What Can You Expect?</h3>
+                    <button class="modal-open">What Can You Expect?</button>
                 </div>
+                <p>Having a website is essential in today's digital age. It serves as your online storefront, helping you reach a wider audience and establish credibility. Click the button below to learn more about why a website is crucial for your success.</p>
+                <button class="modal-open" data-modal="7">Why Do You Need a Website?</button>
                 <p> Whether you're looking to showcase your portfolio, streamline bookings, or develop a
                     custom
                     web application, I'm ready to collaborate and bring your vision to life.</p>
