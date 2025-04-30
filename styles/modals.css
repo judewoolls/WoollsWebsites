@@ -25,6 +25,11 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.info-modal-content {
+    max-height: 90vh;
+    overflow: scroll;
+}
+
 .info-modal h2 {
     color: #38b6ff;
 }
@@ -68,6 +73,7 @@
     background-color: #38b6ff;
     border: 2px solid #38b6ff;
     border-radius: 0.5rem;
+    margin-top: 20px;
 }
 
 #modal-close:hover,
