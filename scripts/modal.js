@@ -39,12 +39,13 @@ const modalContent = [
     `
     }
 ];
+// Modal functionality
+// Open modal on click
 
 document.querySelectorAll('.modal-open').forEach((el) => {
     el.addEventListener('click', () => {
         const modal = document.querySelector('.info-modal');
         modal.classList.add('active-modal');
-
         const modalNumber = parseInt(el.dataset.modal) - 1;
         const modalTitle = document.querySelector('#modal-title');
         modalTitle.innerText = modalContent[modalNumber].title;
@@ -57,9 +58,13 @@ document.querySelectorAll('.modal-open').forEach((el) => {
             const modalList = document.querySelector('#modal-list');
             modalList.innerHTML = '';
         }
+        setTimeout(() => {
+            modal.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 50);
     });
 });
 
+// Close modal on click
 document.querySelector('#modal-close').addEventListener('click', () => {
     const modal = document.querySelector('.info-modal');
     modal.classList.remove('active-modal');
