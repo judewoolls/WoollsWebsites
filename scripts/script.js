@@ -10,6 +10,23 @@ const logoObserver = new IntersectionObserver((entries) => {
 const logo = document.querySelectorAll('.logo-start');
 logo.forEach((el) => logoObserver.observe(el));
 
+// this is the text content animation
+const textObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+      entry.target.classList.remove('hide');
+      } else {
+        entry.target.classList.remove('show');
+        entry.target.classList.add('hide');
+      }
+  });
+});
+
+const hiddenElements = document.querySelectorAll('.hide');
+hiddenElements.forEach((el) => textObserver.observe(el));
+// end of the text content animation
+
 const modal = document.querySelector('.intro-modal');
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
