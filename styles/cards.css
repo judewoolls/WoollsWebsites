@@ -122,6 +122,10 @@
     background-color: black;
 }
 
+.content-section {
+    overflow-x: hidden;
+}
+
 .service-card-start {
     transform:translateX(-100%);
     opacity: 0;
