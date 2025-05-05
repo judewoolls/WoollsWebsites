@@ -210,4 +210,11 @@
         box-shadow: none !important;
     }
 
+    .service-card-end, .service-card-end-2 {
+        transform:translateX(0);
+        opacity: 1;
+        transition: all 0.001ms ease;
+        transition-delay: 0.01ms;
+    }
+
 }
