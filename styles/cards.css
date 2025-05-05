@@ -122,6 +122,33 @@
     background-color: black;
 }
 
+.service-card-start {
+    transform:translateX(-100%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    transition-delay: 0.3s;
+}
+
+.service-card-end {
+    transform:translateX(0);
+    opacity: 1;
+    transition: all 0.5s ease;
+    transition-delay: 0.3s;
+}
+
+.service-card-start-2 {
+    transform:translateX(100%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    transition-delay: 0.3s;
+}
+
+.service-card-end-2 {
+    transform:translateX(0);
+    opacity: 1;
+    transition: all 0.5s ease;
+    transition-delay: 0.3s;
+}
 
 @media (hover) {
     .card-content {
