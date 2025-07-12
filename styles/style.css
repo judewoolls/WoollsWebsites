@@ -62,7 +62,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: black;
     color: #A8A8A8;
     font-family: 'Saira Condensed', sans-serif;
     font-size: 18px;
@@ -73,7 +73,7 @@ body {
 }
 
 header {
-    background-color: white;
+    background-color: black;
     padding: 20px 0;
     text-align: center;
     border-bottom: 1px solid #333;
@@ -106,7 +106,7 @@ header {
 }
 
 #navbar {
-    background-color: #ffffff !important;
+    background-color: rgb(8, 7, 7) !important;
     border: none !important;
 }
 
@@ -130,8 +130,8 @@ header {
     padding: 150px 20px;
     text-align: center;
     position: relative;
-    border-top: #38b6ff 4px solid;
-    border-bottom: #38b6ff 4px solid;
+    border-top: blue 4px solid;
+    border-bottom: blue 4px solid;
 }
 
 .hero > * {
@@ -146,7 +146,8 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #38b6ffa0
+    /* background-color: #38b6ffa0 */
+    background-color: rgba(56, 182, 255, 0.5);
 }
 
 .hero h1 {
@@ -237,7 +238,8 @@ a > #hero-button:hover {
 }
 
 .content-section {
-    background-color: white;
+    background-color: black;
+    color: white;
     padding: 80px 20px;
     text-align: center;
 }
@@ -260,8 +262,8 @@ a > #hero-button:hover {
 
 #about-me {
     font-size: 1.4rem;
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: black;
 }
 
 #about-me h2 > span {
@@ -576,7 +578,7 @@ footer a:hover,
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #38b6ff7b
+        background-color: rgba(40, 3, 229, 0.419);
     }
 }
 
