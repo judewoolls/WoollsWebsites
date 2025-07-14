@@ -166,7 +166,7 @@ header {
     font-weight: 600;
 }
 
-.hero button, #contact-button, #services-contact-button {
+.hero button, #contact-button {
     background-color: blue;
     color: #1E1E1E;
     padding: 18px 40px;
@@ -245,9 +245,9 @@ a > #hero-button:hover {
 }
 
 .content-section h2 {
-    color: #38b6ff;
+    color: black;
     font-size: 2.5em;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     font-weight: 600;
 }
 
@@ -306,22 +306,46 @@ a > #hero-button:hover {
     font-weight: 600;
 }
 
-#my-services-section {
-    margin-top: -140px;
+/* get free guide section */
+.lead-magnet {
+    background-color: #1E1E1E;
+    color: white;
+    min-height: 30vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: black 4px solid;
 }
+
+#lead-magnet-button {
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s, box-shadow 0.3s ease-in-out;
+}
+#lead-magnet-button:hover {
+    background-color: white;
+    box-shadow: 0 0 15px white;
+    color: #333;
+}
+
 
 #projects {
-    margin-top: -120px;
+    margin-top: 120px;
 }
 
-#services-contact-button-section {
+/* #services-contact-button-section {
     margin-top: -100px;
 
-}
+} */
 
-#contact-section {
+/* #contact-section {
     margin-top: -120px;
-}
+} */
 
 .contacts {
     display: flex;
