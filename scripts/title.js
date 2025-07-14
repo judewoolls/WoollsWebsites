@@ -1,7 +1,7 @@
 const titleSpan = document.querySelector('#title-span');
 titleSpan.innerHTML = '';
 
-const title = "Let's Build Something That Works";
+const title = "Turning Your Vision Into Value";
 const titleLetters = title.split('');
 
 let animationStarted = false;

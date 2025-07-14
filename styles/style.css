@@ -436,57 +436,9 @@ a > #hero-button:hover {
 /* Optional: Even smaller screens, if needed */
 @media (max-width: 480px) {
     #ginger-interiors-logo {
-        width: 120px;
-        height: 120px;
+        width: 200px;
+        height: 200px;
     }
-}
-
-/* #services-contact-button-section {
-    margin-top: -100px;
-
-} */
-
-/* #contact-section {
-    margin-top: -120px;
-} */
-
-.contacts {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    overflow-x: hidden;
-}
-
-.contact-card {
-    border: #38b6ff 3px solid;
-    background-color: #1E1E1E;
-    border-radius: 50%;
-    padding: 80px;
-
-}
-
-.contacts-start {
-    transform: translateX(-100%);
-    opacity: 0;
-}
-
-.contacts-end {
-    transform: translateX(0);
-    opacity: 1;
-    transition: transform 0.5s ease;
-    transition-delay: 300ms;
-}
-
-.contacts-start-2 {
-    transform: translateX(100%);
-}
-
-.contacts-end-2 {
-    transform: translateX(0);
-    opacity: 1;
-    transition: transform 0.5s ease;
-    transition-delay: 300ms;
 }
 
 
