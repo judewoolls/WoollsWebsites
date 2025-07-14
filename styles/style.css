@@ -308,26 +308,27 @@ a > #hero-button:hover {
 
 /* get free guide section */
 .lead-magnet {
-    background-color: #333;
+    background-color: #1E1E1E;
     color: white;
     min-height: 30vh;
-    max-width: 84vw;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: black 4px solid;
+    border-top: black 4px solid;
+    border-bottom: black 4px solid;
     margin: 0 auto;
 }
 
 #lead-magnet-button {
-    background-color: black;
+    background-color: rgb(0, 123, 255); /* A vibrant blue color */
     color: white;
     padding: 15px 30px;
     border: none;
     border-radius: 5px;
     font-weight: 600;
     transition: background-color 0.3s, box-shadow 0.3s ease-in-out;
+    margin-bottom: 10px;
 }
 #lead-magnet-button:hover {
     background-color: white;
@@ -502,7 +503,7 @@ a > #hero-button:hover {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background-color: black;
+    background-color: rgb(251, 249, 249);
     color: white;
     padding-bottom: 40px;
     padding-top: 20px;
@@ -517,7 +518,7 @@ a > #hero-button:hover {
     justify-content: space-around;
     min-height: 60vh;
     min-width: 60%;
-    border: #38b6ff 4px solid;
+    border: black 4px solid;
 }
 
 #contact-form input[type="text"],
@@ -540,21 +541,21 @@ a > #hero-button:hover {
 } 
 
 form > h3 {
-    color: #38b6ff;
+    color: #333;
     font-size: 1.4em;
     margin-bottom: 20px;
     font-weight: 600;
 }
 
 label {
-    color: #38b6ff;
+    color: #333;
     font-size: 1.2em;
     font-weight: 600;
 }
 
 #form-submit-button {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     border: none;
     cursor: pointer;
     padding: 5px 0px;
@@ -567,9 +568,9 @@ label {
 }
 
 #form-submit-button:hover {
-    background-color: #38b6ff;
+    background-color: green;
     color: white;
-    box-shadow: 0 0 15px #38b6ff;
+    box-shadow: 0 0 15px green;
 }
 
 
