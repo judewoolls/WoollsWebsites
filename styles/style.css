@@ -331,11 +331,110 @@ a > #hero-button:hover {
     background-color: white;
     box-shadow: 0 0 15px white;
     color: #333;
+    cursor: pointer;
 }
 
-
+/* client projects section */
+/* Base styles for larger screens */
 #projects {
-    margin-top: 120px;
+    background-color: white;
+    color: #333;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#ginger-interiors-project {
+    display: grid;
+    /* This creates three columns for larger screens */
+    grid-template-columns: 2fr 350px 2fr;
+    gap: 20px;
+    /* Add max-width and margin auto for better control on large screens */
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+    align-items: center; /* Vertically align items in the grid */
+    padding: 20px 20px; /* Add some padding to the sides */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2); /* Horizontal, Vertical, Blur, Spread, Color, INSET */
+}
+
+#ginger-interiors-logo {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    display: block; /* Ensures it behaves like a block element for margin auto */
+    margin: 0 auto; /* Center the image within its grid column */
+}
+
+/* Media Queries for responsiveness */
+
+/* For medium screens (e.g., tablets) - adjust breakpoint as needed */
+@media (max-width: 992px) {
+    #ginger-interiors-project {
+        /* Change to a single column layout */
+        grid-template-columns: 1fr;
+        /* Reorder content for medium screens if desired */
+        grid-template-areas:
+            "logo"
+            "description1"
+            "description2";
+    }
+
+    #ginger-interiors-project > div:nth-child(1) { /* First div (project-description) */
+        grid-area: description1;
+    }
+
+    #ginger-interiors-project > div:nth-child(2) { /* Second div (logo) */
+        grid-area: logo;
+        order: -1; /* Move logo to the top */
+    }
+
+    #ginger-interiors-project > div:nth-child(3) { /* Third div (explore project) */
+        grid-area: description2;
+    }
+
+    #ginger-interiors-logo {
+        width: 300px; /* Slightly smaller logo for tablets */
+        height: 300px;
+    }
+
+    #projects {
+        padding: 60px 15px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* For small screens (e.g., mobile phones) - adjust breakpoint as needed */
+@media (max-width: 768px) {
+    #ginger-interiors-project {
+        /* Already 1fr from the previous breakpoint, but good to be explicit or if you skipped the medium breakpoint */
+        grid-template-columns: 1fr;
+        gap: 15px; /* Reduce gap for smaller screens */
+    }
+
+    #ginger-interiors-logo {
+        width: 250px; /* Even smaller logo for mobile */
+        height: 250px;
+    }
+
+    #projects {
+        padding: 40px 10px; /* Further adjust padding */
+    }
+
+    .project-description {
+        font-size: 0.9em; /* Adjust font size for readability */
+    }
+
+    /* You might want to remove the specific grid-area assignments if the order is naturally stacked now */
+    #ginger-interiors-project > div:nth-child(2) { /* Second div (logo) */
+        order: -1; /* Keep logo at the top */
+    }
+}
+
+/* Optional: Even smaller screens, if needed */
+@media (max-width: 480px) {
+    #ginger-interiors-logo {
+        width: 120px;
+        height: 120px;
+    }
 }
 
 /* #services-contact-button-section {
