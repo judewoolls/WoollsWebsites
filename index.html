@@ -40,7 +40,7 @@
     <header id="navbar" class="intro-modal">
         <nav>
             <div id="header-logo">
-                <img src="images/Woolls-logo-small.png" alt="The WoollsWebsites logo" class="logo-start">
+                <img src="images/woolls-websites-black-white-logo-small.png" alt="The WoollsWebsites logo" class="logo-start" style="max-height: 250px; margin-top: 50px;">
             </div>
         </nav>
     </header>
@@ -58,59 +58,62 @@
         <h1>Web Development Tailored for Your Business Success</h1>
         <p>Get custom web solutions designed to achieve your specific business objectives and drive growth</p>
         <a href="#contact-form">
-            <button id="hero-button">Let's Talk</button>
+            <button id="hero-button">Elevate Your Business Today</button>
         </a>
     </section>
 
+
     <section class="content-section" id="about-me">
         <h2><span id="title-span"></span></h2>
-        <div class="about-container about-card">
-            <p class="hide">
-                Let's face it, your website should be more than just a digital brochure – it should be a valuable asset.
-                WoollsWebsites was founded with the goal of helping individuals and businesses build
-                online presences that genuinely work for them.
-            </p>
-            <p class="hide">Discover more about me below!</p>
-            <div class="about-card-section">
-                <div class="about-card modal-open hide" data-modal="4">
-                    <button>Where Did I learn?</button>
-                </div>
-                <div class="about-card modal-open hide" data-modal="5">
-                    <button>About The Technologies</button>
-                </div>
-                <div class="about-card modal-open hide" data-modal="6">
-                    <button class="modal-open">What Can You Expect?</button>
-                </div>
-                <p class="hide">Having a website is essential in today's digital age. It serves as your online storefront, helping you reach a wider audience and establish credibility. Click the button below to learn more about why a website is crucial for your success.</p>
-                <button class="modal-open hide" data-modal="7">Why Do You Need a Website?</button><br>
-                <p class="hide"> Whether you're looking to showcase your portfolio, streamline bookings, or develop a
-                    custom
-                    web application, I'm ready to collaborate and bring your vision to life.</p>
-            </div>
+        <p>Welcome to WoollsWebsites! We create websites that help businesses succeed online. Whether you need a simple website to share information or a more advanced one to handle specific tasks, we can make it happen for you.</p><br>
+        <p>Our goal is to make the process easy and stress-free, even if you're not familiar with web development. We'll work with you to understand your needs and create a website that looks great and works perfectly for your business.</p>
+    </section>
 
+    <section class="lead-magnet">
+        <h2>Unlock Your Free Business Growth Guide</h2>
+        <p>Discover the essential steps to establish your online presence and drive success in the digital world. Get started today with our comprehensive guide tailored for businesses like yours.</p>
+        <a href="#contact-form">
+            <button id="lead-magnet-button">Claim Your Free Guide</button>
+        </a>
+    </section>
+
+    <section id="projects">
+        <h2>Client Projects</h2>
+        <div id="ginger-interiors-project">
+            <div>
+                <p class="project-description">The Ginger Interiors website was crafted to showcase their bespoke interior design services, featuring a clean and elegant design that reflects their brand identity. It includes a portfolio section, service details, and an intuitive contact form to engage potential clients.</p>
+            </div>
+            <div>
+                <a href="https://judewoolls.github.io/ginger-interiors-demo/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/GingerInteriors-No-Dot.png" alt="Ginger interiors logo that links to the project"
+                    class="project-image" id="ginger-interiors-logo">
+                </a>
+            </div>
+            <div>
+                <p class="project-description">This project demonstrates our expertise in delivering professional websites with clean design and seamless functionality, ensuring optimal user engagement and satisfaction. Click on the logo to check it out!</p>
+            </div>
         </div>
+
     </section>
 
     <section class="content-section" id="my-services-section">
-        <h2>My Services</h2>
+        <h2>Professional Services Tailored to Your Needs</h2>
         <div class="services">
             <div class="service-card card service-card-start" id="frontend-card" data-service="1">
                 <div class="card-content">
-                    <h3 class="card-title">Front-End Development</h3>
-                    <p class="card-body">Creating responsive and visually appealing user interfaces using modern
-                        technologies to elevate your business.</p>
+                    <h3 class="card-title">Website Package</h3>
+                    <p class="card-body">Promoting your business with a complete website package designed to showcase your services effectively.</p>
                     <a class="card-button modal-open" data-modal="1">Learn More</a>
                 </div>
             </div>
             <div class="service-card card service-card-start" id="backend-card" data-service="1">
                 <div class="card-content">
-                    <h3 class="card-title">Back-End Development</h3>
-                    <p class="card-body">Building robust and scalable server-side applications using Django, PostgreSQL,
-                        and more.</p>
+                    <h3 class="card-title">Web App Package</h3>
+                    <p class="card-body">Creating powerful web applications designed to enhance your business efficiency, tailored to your unique needs.</p>
                     <a class="card-button modal-open" data-modal="2">Learn More</a>
                 </div>
             </div>
-            <div class="service-card card service-card-start" id="uiux-card" data-service="1">
+            <!-- <div class="service-card card service-card-start" id="uiux-card" data-service="1">
                 <div class="card-content">
                     <h3 class="card-title">Full-stack Development</h3>
                     <p class="card-body">Combining front-end and back-end expertise to deliver seamless, fully
@@ -118,75 +121,7 @@
                     </p>
                     <a class="card-button modal-open" data-modal="3">Learn More</a>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="content-section" id="services-contact-button-section">
-        <a href="#contact-section">
-            <button id="services-contact-button">Contact me</button>
-        </a>
-    </div>
-
-    <section class="content-section" id="projects">
-        <h2>My Projects</h2>
-        <div class="services">
-            <div class="service-card card service-card-start" id="classfit-card" data-service="2">
-                <div class="card-content">
-                    <h3 class="card-title">ClassFit</h3>
-                    <p class="card-body">An online booking system for gym & fitness classes that includes a logbook &
-                        leaderboard using Django & PostgreSQL</p>
-                    <a class="card-button" href="https://classfit-9bcca60104a7.herokuapp.com/" target="_blank">Visit
-                        site</a>
-                </div>
-            </div>
-            <div class="service-card card service-card-start" id="blockflow-card" data-service="2">
-                <div class="card-content">
-                    <h3 class="card-title">BlockFlow</h3>
-                    <p class="card-body">A tetris remake built in a hackathon using JavaScript, HTML & CSS to recreate
-                        the classic game.</p>
-                    <a class="card-button" href="https://judewoolls.github.io/Block-Flow/" target="_blank">Play here</a>
-                </div>
-            </div>
-            <div class="service-card card service-card-start-2" id="fullfillmenthub-card" data-service="2">
-                <div class="card-content">
-                    <h3 class="card-title">The Fullfillment Hub</h3>
-                    <p class="card-body">My first project from my time at Code institute using HTML, CSS & Bootstrap to
-                        promote wellbeing</p>
-                    <a class="card-button" href="https://judewoolls.github.io/assessment-project-1/"
-                        target="_blank">Visit site</a>
-                </div>
-            </div>
-            <div class="service-card card service-card-start-2" id="messageboard-card" data-service="2">
-                <div class="card-content">
-                    <h3 class="card-title">Message Board</h3>
-                    <p class="card-body">This Full-stack application was used to thank our course facilitator. It
-                        handles messages and their
-                        likes.</p>
-                    <a class="card-button" href="https://messageboard1-f1454f42f245.herokuapp.com/"
-                        target="_blank">Visit site</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="content-section" id="contact-section">
-        <h2>Contact Me</h2>
-        <div class="contacts">
-            <div class="contact-card contacts-start" data-contact="1">
-                <a href="https://www.fiverr.com/kaputiowa28050/create-a-modern-an-responsive-restaurant-website?context_referrer=search_gigs&source=top-bar&ref_ctx_id=164f33f15fa64a8ba836ff9daa4ce384&pckg_id=1&pos=1&context_type=auto&funnel=164f33f15fa64a8ba836ff9daa4ce384&seller_online=true&imp_id=d71816a9-714b-4c0e-9e04-3deec4c2cae4"
-                    target="_blank" rel="noopener noreferrer" alt="Link to Fiverr.com" name="Link to my Fiverr profile">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </a>
-                <p>Use fiverr to make a request</p>
-            </div>
-            <div class="contact-card contacts-start-2" data-contact="2">
-                <a href="http://linkedin.com/in/judewoolls/" target="_blank" rel="noopener noreferrer"
-                    alt="Link to LinkedIn" name="Link to my profile on LinkedIn">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <p>Connect with me on LinkedIn</p>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -214,7 +149,8 @@
             </a>
         </div>
         <div id="footer-text">
-            <p>&copy; 2025 WoollsWebsites</p>
+             <img src="images/logo-no-text-black-white.png" alt="logo of ram" style="max-height: 75px; padding: -20px;" id="footer-logo">
+              <p id="copyright-text">&copy; 2025 WoollsWebsites</p>
         </div>
         <div id="linkedin-div">
             <a href="http://linkedin.com/in/judewoolls/" target="_blank" rel="noopener noreferrer"

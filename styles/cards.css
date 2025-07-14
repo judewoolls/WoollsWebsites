@@ -6,12 +6,12 @@
 }
 
 #frontend-card {
-    background: url('../images/cards/software\ related\ image.png');
+    background: url('../images/cards/personal-training-black-white.png') center;
     background-size: cover;
 }
 
 #backend-card {
-    background: url('../images/cards/software\ related\ image\ \(2\).png');
+    background: url('../images/cards/web-app-black-white.png') center;
     background-size: cover;
 }
 
@@ -20,25 +20,7 @@
     background-size: cover;
 }
 
-#classfit-card {
-    background: url('../images/cards/a\ coach\ helping\ their\ new\ client\ in\ CrossFit.png');
-    background-size: cover;
-}
 
-#blockflow-card {
-    background: url('../images/cards/arcade\ retro\ machine\ without\ kids.png');
-    background-size: cover;
-}
-
-#messageboard-card {
-    background: url('../images/cards/notice\ board.png');
-    background-size: cover;
-}
-
-#fullfillmenthub-card {
-    background: url('../images/cards/spa\ retreat.png');
-    background-size: cover;
-}
 
 .card {
     min-height: 400px;
@@ -54,23 +36,23 @@
 
 }
 
-.card:hover,
+/* .card:hover,
 .card:focus-within {
     transform: scale(1.05);
-}
+} */
 
 .card-content {
     --padding: 1.5rem;
     padding: var(--padding);
     background: linear-gradient(
-    hsl(0 0% 0% / 0),
-    hsl(0 0% 0% / 0.3) 20%,
-    hsl(0 0% 0% / 1));
+    hsla(0, 0%, 0%, 0),
+    hsla(0, 0%, 71%, 0.3) 20%,
+    hsl(0, 0%, 77%));
 
 }
 
 .card-title {
-    color: #00FFFF;
+    color: white;
     width: max-content;
     position: relative;
     
@@ -81,7 +63,7 @@
     display: block;
     width: calc(100% + var(--padding));
     height: 4px;
-    background-color: #00FFFF;
+    background-color: white;
     position: absolute;
     bottom: -2px;
     left: calc(var(--padding) * -1);
@@ -95,17 +77,20 @@
 }
 
 .card-body {
-    color: rgb(255 255 255 / 0.85);
+    /* color: rgb(255 255 255 / 0.85); */
+    color: black;
     text-align: left;
     margin-left: 0px;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .card-button {
     cursor: pointer;
     display: inline-block;
-    background-color: #00FFFF;
+    background-color: black;
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 0.3em 1em;
     border-radius: .25em;
     transition: all 0.3s ease-in-out;
@@ -113,8 +98,8 @@
 
 .card-button:hover,
 .card-button:focus {
-    background-color: #38b6ff;
-    box-shadow: 0 0 15px #38b6ff;
+    background-color: white;
+    box-shadow: 0 0 15px white;
     color: black;
 }
 

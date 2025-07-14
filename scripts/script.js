@@ -60,34 +60,3 @@ const serviceObserver = new IntersectionObserver((entries) => {
 const services = document.querySelectorAll('.service-card');
 
 services.forEach((el) => serviceObserver.observe(el));
-
-// contact section animation
-const contactsObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        if (entry.target.dataset.contact === '1') {
-          entry.target.classList.add('contacts-end');
-          entry.target.classList.remove('contacts-start');
-        } else if (entry.target.dataset.contact === '2') {
-          entry.target.classList.add('contacts-end-2');
-          entry.target.classList.remove('contacts-start-2');
-        }
-      } else {
-        if (entry.target.dataset.contact === '1') {
-          entry.target.classList.remove('contacts-end');
-          entry.target.classList.add('contacts-start');
-        } else if (entry.target.dataset.contact === '2') {
-          entry.target.classList.remove('contacts-end-2');
-          entry.target.classList.add('contacts-start-2');
-        }
-      }
-  });
-});
-
-const contactsLeft = document.querySelectorAll('.contacts-start');
-contactsLeft.forEach((el) => contactsObserver.observe(el));
-
-const contactsRight = document.querySelectorAll('.contacts-start-2');
-contactsRight.forEach((el) => contactsObserver.observe(el));
-
-
