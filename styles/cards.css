@@ -6,12 +6,12 @@
 }
 
 #frontend-card {
-    background: url('../images/cards/software\ related\ image.png');
+    background: url('../images/cards/personal-training-black-white.png') center;
     background-size: cover;
 }
 
 #backend-card {
-    background: url('../images/cards/software\ related\ image\ \(2\).png');
+    background: url('../images/cards/web-app-black-white.png') center;
     background-size: cover;
 }
 
@@ -20,25 +20,7 @@
     background-size: cover;
 }
 
-#classfit-card {
-    background: url('../images/cards/a\ coach\ helping\ their\ new\ client\ in\ CrossFit.png');
-    background-size: cover;
-}
 
-#blockflow-card {
-    background: url('../images/cards/arcade\ retro\ machine\ without\ kids.png');
-    background-size: cover;
-}
-
-#messageboard-card {
-    background: url('../images/cards/notice\ board.png');
-    background-size: cover;
-}
-
-#fullfillmenthub-card {
-    background: url('../images/cards/spa\ retreat.png');
-    background-size: cover;
-}
 
 .card {
     min-height: 400px;
@@ -54,10 +36,10 @@
 
 }
 
-.card:hover,
+/* .card:hover,
 .card:focus-within {
     transform: scale(1.05);
-}
+} */
 
 .card-content {
     --padding: 1.5rem;
@@ -70,7 +52,7 @@
 }
 
 .card-title {
-    color: #00FFFF;
+    color: white;
     width: max-content;
     position: relative;
     
@@ -81,7 +63,7 @@
     display: block;
     width: calc(100% + var(--padding));
     height: 4px;
-    background-color: #00FFFF;
+    background-color: white;
     position: absolute;
     bottom: -2px;
     left: calc(var(--padding) * -1);
