@@ -398,8 +398,15 @@ a > #hero-button:hover {
     object-fit: cover;
     display: block; /* Ensures it behaves like a block element for margin auto */
     margin: 0 auto; /* Center the image within its grid column */
+    box-shadow: 0 0 20px rgba(32, 30, 30, 0.809);
+    transition: transform 0.3s ease-in-out;
 }
 
+#ginger-interiors-logo:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 40px rgba(169, 93, 0, 0.809);;
+}
 /* Media Queries for responsiveness */
 
 /* For medium screens (e.g., tablets) - adjust breakpoint as needed */
@@ -752,33 +759,10 @@ footer a:hover,
         box-shadow: none !important;
     }
 
-    .contacts-start {
-        transform: translateX(0);
-        opacity: 1;
-        transition: transform 0.01ms !important;
-        transition-delay: 0ms;
-    }
-    .contacts-start-2 {
-        transform: translateX(0);
-        opacity: 1;
-        transition: transform 0.01ms !important;
-        transition-delay: 0ms;
-    }
-
-    
-    .contacts-end {
-        transform: translateX(0);
-        opacity: 1;
-        transition: transform 0.01ms !important;
-        transition-delay: 0ms;
-    }
-    
-    
-    .contacts-end-2 {
-        transform: translateX(0);
-        opacity: 1;
-        transition: transform 0.01ms !important;
-        transition-delay: 0ms;
+    #ginger-interiors-logo:hover {
+        transform: scale(1.00);
+        transition: transform 0.0000001s ease;
+        box-shadow: 0 0 40px rgba(169, 93, 0, 0.809);
     }
 
     #form-submit-button:hover {
