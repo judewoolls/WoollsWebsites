@@ -1,13 +1,14 @@
 const modalContent = [
     {
         "title": "Website Package",
-        "text": "Get a professionally designed website tailored to your unique needs and goals. This package includes responsive design, user-friendly navigation, and a modern aesthetic to effectively showcase your business. Prices start at £300. After discussing your requirements in a free consultation call, I will ensure your website aligns perfectly with your vision."
+        "text": "Looking for a professional website that truly represents your brand? This package includes a clean, modern design that looks great on all devices, easy navigation for your visitors, and everything you need to make a strong first impression online. Prices start at £300. We’ll start with a free consultation call to plan a site that fits your goals perfectly."
     },
     {
         "title": "Web App Package",
-        "text": "Receive a custom web application designed to meet your specific requirements. This package ensures robust functionality, scalability, and a seamless user experience. Prices start at £900. We will schedule a consultation call to understand your needs and provide a solution that exceeds your expectations."
+        "text": "Need something more interactive? This package is perfect for businesses that want a custom web app tailored to how they work. Whether it’s a booking system, client portal, or something unique, you’ll get a smooth, scalable solution designed for real results. Prices start at £900. We'll kick things off with a free consultation to map out your ideal app."
     }
 ];
+
 // Modal functionality
 // Open modal on click
 
