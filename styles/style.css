@@ -147,7 +147,7 @@ header {
     right: 0;
     bottom: 0;
     /* background-color: #38b6ffa0 */
-    background-color: rgba(15, 15, 15, 0.86);
+    background-color: rgba(15, 15, 15, 0.75);
 }
 
 .hero h1 {
@@ -319,6 +319,19 @@ a > #hero-button:hover {
 
 #my-services-section {
     padding: 10px 80px 20px;
+}
+
+@media screen and (max-width: 863px) {
+
+    #my-services-section h2, #projects h2 {
+        color: black;
+        font-size: 1.8rem;
+    }
+
+    #my-services-section h2 {
+        margin-top: -20px;
+    }
+    
 }
 
 /* get free guide section */
@@ -684,12 +697,19 @@ footer a:hover,
         right: 0;
         bottom: 0;
         /* background-color: rgba(41, 3, 229, 0.578); */
-        background-color: rgba(15, 15, 15, 0.86);
+        background-color: rgba(15, 15, 15, 0.75);
     }
 }
 
 @media screen and (max-width: 992px) {
 
+    #hero-button {
+        color: #1E1E1E;
+        background-color: white;
+        border-color: white;
+        padding: 10px 20px;
+        font-size: 1em;
+    }
 
     .form {
         min-width: 100%;
