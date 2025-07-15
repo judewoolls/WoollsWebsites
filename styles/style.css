@@ -607,12 +607,12 @@ footer a:hover,
 
 #footer-logo {
     border-radius: 50%;
-    box-shadow: 0 0 5px #1E1E1E;
+    /* box-shadow: 0 0 5px #1E1E1E; */
 }
 
 #copyright-text {
     color: #1E1E1E;
-    margin-top: -10px;
+    margin-top: -25px;
 }
 
 /* Add a media query to change the flex direction on smaller screens */
