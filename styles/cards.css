@@ -6,12 +6,12 @@
 }
 
 #frontend-card {
-    background: url('../images/cards/personal-training-black-white.png') center;
+    background: url('../images/cards/personal-training-black-white.webp') center;
     background-size: cover;
 }
 
 #backend-card {
-    background: url('../images/cards/web-app-black-white.png') center;
+    background: url('../images/cards/web-app-black-white.webp') center;
     background-size: cover;
 }
 

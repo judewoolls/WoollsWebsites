@@ -13,7 +13,7 @@
 
     <meta property="og:url" content="https://woollswebsites.co.uk">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://woollswebsites.co.uk/images/woolls-websites-black-white-logo-small.png">
+    <meta property="og:image" content="https://woollswebsites.co.uk/images/woolls-websites-black-white-logo-small.webp">
     <meta property="og:image:alt" content="WoollsWebsites logo">
     <meta property="og:locale" content="en_GB">
     <meta property="og:site_name" content="WoollsWebsites">
@@ -33,9 +33,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon_io_WW/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon_io_WW/favicon-16x16.png">
     <link rel="manifest" href="images/icons/favicon_io_WW/site.webmanifest">
+    <link rel="preload" href="styles/style.css" as="style">
+    <link rel="preload" href="scripts/script.js" as="script">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/cards.css">
-    <link rel="stylesheet" href="styles/modals.css">
+    <link rel="preload" href="images/woolls-websites-black-white-logo-small.webp" as="image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
@@ -43,7 +46,7 @@
     <header id="navbar" class="intro-modal">
         <nav>
             <div id="header-logo">
-                <img src="images/woolls-websites-black-white-logo-small.png" alt="The WoollsWebsites logo" class="logo-start" style="max-height: 250px; margin-top: 50px;">
+                <img src="images/woolls-websites-black-white-logo-small.webp" alt="The WoollsWebsites logo" class="logo-start" style="max-height: 250px; margin-top: 50px;" height="250" width="250">
             </div>
         </nav>
     </header>
@@ -88,8 +91,8 @@
             </div>
             <div>
                 <a href="https://gingerinteriors.info" target="_blank" rel="noopener noreferrer">
-                    <img src="images/GingerInteriors-No-Dot.png" alt="Ginger interiors logo that links to the project"
-                    class="project-image" id="ginger-interiors-logo">
+                    <img src="images/GingerInteriors-No-Dot.webp" alt="Ginger interiors logo that links to the project"
+                    class="project-image" id="ginger-interiors-logo" loading="lazy" width="350" height="350">
                 </a>
             </div>
             <div>
@@ -152,7 +155,7 @@
             </a>
         </div>
         <div id="footer-text">
-             <img src="images/logo-no-text-black-white.png" alt="logo of ram" style="max-height: 75px; padding: -20px;" id="footer-logo">
+             <img src="images/logo-no-text-black-white.webp" alt="logo of ram" style="max-height: 75px; padding: -20px;" id="footer-logo" loading="lazy">
               <p id="copyright-text">&copy; 2025 WoollsWebsites</p>
         </div>
         <div id="linkedin-div">
@@ -163,10 +166,22 @@
         </div>
     </footer>
 
-    <script src="https://kit.fontawesome.com/e2a727411d.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e2a727411d.js" crossorigin="anonymous" defer></script>
+    <script src="scripts/title.js" defer></script>
     <script src="scripts/script.js"></script>
-    <script src="scripts/modal.js"></script>
-    <script src="scripts/title.js"></script>
+    <script src="scripts/modal.js" defer></script>
+    <script defer>
+        
+    window.addEventListener('load', function() {
+        
+        var link = document.createElement('link');
+        link.href = "https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap";
+        link.rel = 'stylesheet';
+        document.head.appendChild(link);
+    });
+</script>
+
+    </script>
 
 </body>
 
