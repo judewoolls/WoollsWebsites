@@ -38,15 +38,20 @@ function playCurtain() {
   logo.classList.remove('animate');
   headerLogo.classList.remove('header-logo-show');
 
-  // Disable scroll when animation starts
-  document.body.style.overflow = 'hidden';
-
-  setTimeout(() => {
-    document.querySelector('.curtain').style.display = 'none';
-    // Re-enable scroll after animation
-    document.body.style.overflow = '';
-  }, 4000); // match animation duration
-
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  // dont lock scroll if user prefers reduced motion
+  if (!prefersReducedMotion) {
+      document.body.style.overflow = 'hidden'; // Lock scroll
+  
+      setTimeout(() => {
+          document.querySelector('.curtain').style.display = 'none';
+          document.body.style.overflow = ''; // Unlock scroll
+      }, 4000); // Match animation duration
+  } else {
+      // Instantly hide curtain without animation
+      document.querySelector('.curtain').style.display = 'none';
+  }
+  
 
   setTimeout(() => {
     setTimeout(() => {
