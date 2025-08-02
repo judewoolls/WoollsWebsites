@@ -37,22 +37,25 @@ function playCurtain() {
   curtain.style.display = 'flex';
   logo.classList.remove('animate');
   headerLogo.classList.remove('header-logo-show');
-
+  
   setTimeout(() => {
-    logo.classList.add('animate');
-  }, 500);
-
-  setTimeout(() => {
-    headerLogo.classList.add('header-logo-show');
-  }, 1000);
-
-  setTimeout(() => {
-    curtain.style.borderBottom = 'none';
-  }, 1500);
-
-  setTimeout(() => {
-    curtain.style.display = 'none';
-  }, 2500);
+    setTimeout(() => {
+      logo.classList.add('animate');
+    }, 500);
+  
+    setTimeout(() => {
+      headerLogo.classList.add('header-logo-show');
+    }, 1000);
+  
+    setTimeout(() => {
+      curtain.style.borderBottom = 'none';
+    }, 1500);
+  
+    setTimeout(() => {
+      curtain.style.display = 'none';
+    }, 2500);
+  }, 2000);
+ 
 }
 
 // Run on fresh load and bfcache restore

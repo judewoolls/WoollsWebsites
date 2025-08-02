@@ -33,7 +33,7 @@ header {
     justify-content: center;
     align-items: center;
     z-index: 999;
-    animation: curtainLift 5s ease forwards;
+    animation: curtainLift 4s ease forwards;
     border-bottom: 3px solid black;
 }
 
