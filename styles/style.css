@@ -58,6 +58,21 @@ header {
 }
 
 
+/* ===== Reduced Motion Support ===== */
+@media (prefers-reduced-motion: reduce) {
+    .curtain {
+        animation: none !important;
+        transform: translateY(-100%) !important;
+        opacity: 0 !important;
+        transition: none !important;
+    }
+
+    .curtain-logo {
+        transition: none !important;
+        transform: scale(1) !important;
+    }
+}
+
 
 #navbar {
     background-color: rgb(255, 255, 255) !important;
@@ -81,6 +96,14 @@ header {
     max-height: 200px; /* Adjusted for final height */
     margin-top: -28px;
     opacity: 0;
+}
+
+/* ===== Reduced Motion Support ===== */
+@media (prefers-reduced-motion: reduce) {
+    #header-logo img {
+        transition: none !important;
+        opacity: 1 !important;
+    }
 }
 
 .header-logo-show {
