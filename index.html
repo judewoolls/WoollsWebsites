@@ -20,7 +20,8 @@
     <meta name="robots" content="index, follow">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="WoollsWebsites">
-    <meta name="twitter:description" content="Expert web development solutions tailored to your business needs. Let's bring your vision to life.">
+    <meta name="twitter:description"
+        content="Expert web development solutions tailored to your business needs. Let's bring your vision to life.">
     <meta name="twitter:image" content="https://woollswebsites.co.uk/images/logo-no-text-black-white.png">
     <meta name="twitter:image:alt" content="WoollsWebsites logo">
     <meta name="twitter:site" content="@WoolllsJude">
@@ -43,13 +44,20 @@
 
 <body>
 
-    <header id="navbar" class="intro-modal">
+    <div class="curtain">
+        <img src="images/woolls-websites-black-white-logo-small.webp" alt="The WoollsWebsites logo" class="curtain-logo"
+            height="250" width="250">
+    </div>
+
+    <header id="navbar">
         <nav>
             <div id="header-logo">
-                <img src="images/woolls-websites-black-white-logo-small.webp" alt="The WoollsWebsites logo" class="logo-start" style="max-height: 250px; margin-top: 50px;" height="250" width="250">
+                <img src="images/woolls-websites-black-white-logo-small.webp" alt="The WoollsWebsites logo" height="250"
+                    width="250" id="header-logo-img" class="header-logo">
             </div>
         </nav>
     </header>
+
 
     <section class="info-modal">
         <div class="info-modal-content">
@@ -71,14 +79,19 @@
 
     <section class="content-section" id="about-me">
         <h2><span id="title-span"></span></h2>
-        <p>At WoollsWebsites, we craft digital experiences that help your business thrive online. Whether you're after a sleek one-pager or a more complex, custom-built site, we’ll tailor the right solution to your needs.</p><br>
-        <p>We believe web development shouldn’t feel overwhelming. That’s why we handle the technical side while guiding you through each step, making sure your site looks great, performs smoothly, and reflects your brand..</p>
+        <p>At WoollsWebsites, we craft digital experiences that help your business thrive online. Whether you're after a
+            sleek one-pager or a more complex, custom-built site, we’ll tailor the right solution to your needs.</p><br>
+        <p>We believe web development shouldn’t feel overwhelming. That’s why we handle the technical side while guiding
+            you through each step, making sure your site looks great, performs smoothly, and reflects your brand..</p>
     </section>
 
     <section class="lead-magnet">
         <h2>Unlock Your Free Business Growth Guide</h2>
-        <p>Ready to grow your business online? Download our free guide with easy-to-follow steps to help you stand out, connect with more customers, and build a stronger digital presence — no confusing tech talk, just straightforward advice that works.</p>
-        <a href="#contact-form" id="lead-magnet-button" aria-label="Claim your free guide" style="text-decoration: none;">
+        <p>Ready to grow your business online? Download our free guide with easy-to-follow steps to help you stand out,
+            connect with more customers, and build a stronger digital presence — no confusing tech talk, just
+            straightforward advice that works.</p>
+        <a href="#contact-form" id="lead-magnet-button" aria-label="Claim your free guide"
+            style="text-decoration: none;">
             Claim Your Free Guide
         </a>
     </section>
@@ -87,16 +100,19 @@
         <h2>Client Projects</h2>
         <div id="ginger-interiors-project">
             <div>
-                <p class="project-description">Ginger Interiors needed a stylish, modern website to reflect their premium interior design services — and we delivered just that. The site features an elegant layout, service highlights, a portfolio gallery, and a simple contact form to connect with new clients.</p>
+                <p class="project-description">Ginger Interiors needed a stylish, modern website to reflect their
+                    premium interior design services — and we delivered just that. The site features an elegant layout,
+                    service highlights, a portfolio gallery, and a simple contact form to connect with new clients.</p>
             </div>
             <div>
                 <a href="https://gingerinteriors.info" target="_blank" rel="noopener noreferrer">
                     <img src="images/GingerInteriors-No-Dot.webp" alt="Ginger interiors logo that links to the project"
-                    class="project-image" id="ginger-interiors-logo" loading="lazy" width="350" height="350">
+                        class="project-image" id="ginger-interiors-logo" loading="lazy" width="350" height="350">
                 </a>
             </div>
             <div>
-                <p class="project-description">This project is a great example of how we blend clean design with functional features to create a seamless user experience. Click the logo to view the live site.</p>
+                <p class="project-description">This project is a great example of how we blend clean design with
+                    functional features to create a seamless user experience. Click the logo to view the live site.</p>
             </div>
         </div>
 
@@ -108,14 +124,16 @@
             <div class="service-card card service-card-start" id="frontend-card" data-service="1">
                 <div class="card-content">
                     <h3 class="card-title">Website Package</h3>
-                    <p class="card-body">A professionally designed website to highlight your services, build credibility, and help customers find you online.</p>
+                    <p class="card-body">A professionally designed website to highlight your services, build
+                        credibility, and help customers find you online.</p>
                     <a class="card-button modal-open" data-modal="1" aria-label="Learn more button">Learn More</a>
                 </div>
             </div>
             <div class="service-card card service-card-start" id="backend-card" data-service="1">
                 <div class="card-content">
                     <h3 class="card-title">Web App Package</h3>
-                    <p class="card-body">Custom-built web apps that streamline your processes, save time, and support your unique business goals.</p>
+                    <p class="card-body">Custom-built web apps that streamline your processes, save time, and support
+                        your unique business goals.</p>
                     <a class="card-button modal-open" data-modal="2" aria-label="Learn more button">Learn More</a>
                 </div>
             </div>
@@ -136,13 +154,14 @@
             <h3>Contact Form</h3>
             <label for="name">Name</label>
             <input type="text" name="name" id="name" autocomplete="name" required placeholder="Enter your name">
-            
+
             <label for="email">Email</label>
             <input type="email" name="email" id="email" autocomplete="email" required placeholder="Enter your email">
-            
+
             <label for="message">Tell Us What You Need</label>
-            <textarea name="message" id="message" autocomplete="on" required placeholder="Type your message here"></textarea>
-            
+            <textarea name="message" id="message" autocomplete="on" required
+                placeholder="Type your message here"></textarea>
+
             <button id="form-submit-button" class="card-button" type="submit">Send</button>
         </form>
     </section>
@@ -155,8 +174,9 @@
             </a>
         </div>
         <div id="footer-text">
-             <img src="images/logo-no-text-black-white.webp" alt="logo of ram" style="max-height: 75px; padding: -20px;" id="footer-logo" loading="lazy">
-              <p id="copyright-text">&copy; 2025 WoollsWebsites</p>
+            <img src="images/logo-no-text-black-white.webp" alt="logo of ram" style="max-height: 75px; padding: -20px;"
+                id="footer-logo" loading="lazy">
+            <p id="copyright-text">&copy; 2025 WoollsWebsites</p>
         </div>
         <div id="linkedin-div">
             <a href="http://linkedin.com/in/judewoolls/" target="_blank" rel="noopener noreferrer"
@@ -171,15 +191,15 @@
     <script src="scripts/script.js"></script>
     <script src="scripts/modal.js" defer></script>
     <script defer>
-        
-    window.addEventListener('load', function() {
 
-        var link = document.createElement('link');
-        link.href = "https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap";
-        link.rel = 'stylesheet';
-        document.head.appendChild(link);
-    });
-</script>
+        window.addEventListener('load', function () {
+
+            var link = document.createElement('link');
+            link.href = "https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap";
+            link.rel = 'stylesheet';
+            document.head.appendChild(link);
+        });
+    </script>
 
     </script>
 

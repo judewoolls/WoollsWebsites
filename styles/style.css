@@ -21,37 +21,50 @@ header {
     padding: 20px 0;
     text-align: center;
     border-bottom: 1px solid #333;
+    height: 150px; /* Final height from start */
 }
 
-
-.intro-modal {
-    display: grid;
-    grid-template-rows: 100vh;
+/* Curtain covers entire screen initially */
+.curtain {
+    position: fixed;
+    inset: 0;
+    background-color: white;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    min-width: 100%;
-    transition: all 3s ease;
+    z-index: 999;
+    animation: curtainLift 5s ease forwards;
+    border-bottom: 3px solid black;
 }
 
-.intro-modal-end {
-    grid-template-rows: 150px;
+@keyframes curtainLift {
+    0% { transform: translateY(0); }
+    90% { transform: translateY(-100%); opacity: 1; }
+    100% { transform: translateY(-100%); opacity: 0; }
 }
 
-.logo-start {
-    transform: scale(1.5);
-    transition: transform 0.3s ease;
+.curtain.fade-out {
+    animation: fadeOut 0.3s ease forwards;
 }
 
-.logo-end {
-    transform: scale(1);
-    transition: transform 0.6s ease;
-    transition-delay: 400ms;
+.curtain.slide-up {
+    transform: translateY(-100%);
+  }
+  
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
 }
+
+
 
 #navbar {
     background-color: rgb(255, 255, 255) !important;
     border: none !important;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
 }
 
 #header-logo {
@@ -61,6 +74,19 @@ header {
     text-decoration: none;
     background: none;
     max-height: 500px;
+}
+#header-logo img {
+    height: 100%;
+    width: auto;
+    max-height: 200px; /* Adjusted for final height */
+    margin-top: -28px;
+    opacity: 0;
+}
+
+.header-logo-show {
+    opacity: 1 !important;
+    transition: opacity 0.8s ease-in-out;
+    transition-delay: 300ms;
 }
 
 

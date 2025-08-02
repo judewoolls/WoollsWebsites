@@ -27,13 +27,37 @@ const textObserver = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hide');
 hiddenElements.forEach((el) => textObserver.observe(el));
 
-// modal interaction
-const modal = document.querySelector('.intro-modal');
-document.addEventListener('DOMContentLoaded', () => {
-    setTimeout(() => {
-        modal.classList.add('intro-modal-end');
-    }, 1000);
-});
+// curtain animation
+function playCurtain() {
+  const curtain = document.querySelector('.curtain');
+  const logo = document.querySelector('.curtain-logo');
+  const headerLogo = document.querySelector('.header-logo')
+
+  // Reset state so animation can replay
+  curtain.style.display = 'flex';
+  logo.classList.remove('animate');
+  headerLogo.classList.remove('header-logo-show');
+
+  setTimeout(() => {
+    logo.classList.add('animate');
+  }, 500);
+
+  setTimeout(() => {
+    headerLogo.classList.add('header-logo-show');
+  }, 1000);
+
+  setTimeout(() => {
+    curtain.style.borderBottom = 'none';
+  }, 1500);
+
+  setTimeout(() => {
+    curtain.style.display = 'none';
+  }, 2500);
+}
+
+// Run on fresh load and bfcache restore
+document.addEventListener('DOMContentLoaded', playCurtain);
+window.addEventListener('pageshow', playCurtain);
 
 // service section animation
 const serviceObserver = new IntersectionObserver((entries) => {
