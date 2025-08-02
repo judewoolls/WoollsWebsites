@@ -1,10 +1,10 @@
 // this is the header animation
 const logoObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-      if (entry.isIntersecting) {
+    if (entry.isIntersecting) {
       entry.target.classList.add('logo-end');
       entry.target.classList.remove('logo-start');
-      }
+    }
   });
 });
 
@@ -14,13 +14,13 @@ logo.forEach((el) => logoObserver.observe(el));
 // this is the text content animation
 const textObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-      if (entry.isIntersecting) {
+    if (entry.isIntersecting) {
       entry.target.classList.add('show');
       entry.target.classList.remove('hide');
-      } else {
-        entry.target.classList.remove('show');
-        entry.target.classList.add('hide');
-      }
+    } else {
+      entry.target.classList.remove('show');
+      entry.target.classList.add('hide');
+    }
   });
 });
 
@@ -37,25 +37,35 @@ function playCurtain() {
   curtain.style.display = 'flex';
   logo.classList.remove('animate');
   headerLogo.classList.remove('header-logo-show');
-  
+
+  // Disable scroll when animation starts
+  document.body.style.overflow = 'hidden';
+
+  setTimeout(() => {
+    document.querySelector('.curtain').style.display = 'none';
+    // Re-enable scroll after animation
+    document.body.style.overflow = '';
+  }, 4000); // match animation duration
+
+
   setTimeout(() => {
     setTimeout(() => {
       logo.classList.add('animate');
     }, 500);
-  
+
     setTimeout(() => {
       headerLogo.classList.add('header-logo-show');
     }, 1000);
-  
+
     setTimeout(() => {
       curtain.style.borderBottom = 'none';
     }, 1500);
-  
+
     setTimeout(() => {
       curtain.style.display = 'none';
     }, 2500);
   }, 2000);
- 
+
 }
 
 // Run on fresh load and bfcache restore
@@ -65,23 +75,23 @@ window.addEventListener('pageshow', playCurtain);
 // service section animation
 const serviceObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        if (entry.target.dataset.service === '1') {
-          entry.target.classList.add('service-card-end');
-          entry.target.classList.remove('service-card-start');
-        } else if (entry.target.dataset.service === '2') {
-          entry.target.classList.add('service-card-end-2');
-          entry.target.classList.remove('service-card-start-2');
-        }
-      } else {
-        if (entry.target.dataset.service === '1') {
-          entry.target.classList.remove('service-card-end');
-          entry.target.classList.add('service-card-start');
-        } else if (entry.target.dataset.service === '2') {
-          entry.target.classList.remove('service-card-end-2');
-          entry.target.classList.add('service-card-start-2');
-        }
+    if (entry.isIntersecting) {
+      if (entry.target.dataset.service === '1') {
+        entry.target.classList.add('service-card-end');
+        entry.target.classList.remove('service-card-start');
+      } else if (entry.target.dataset.service === '2') {
+        entry.target.classList.add('service-card-end-2');
+        entry.target.classList.remove('service-card-start-2');
       }
+    } else {
+      if (entry.target.dataset.service === '1') {
+        entry.target.classList.remove('service-card-end');
+        entry.target.classList.add('service-card-start');
+      } else if (entry.target.dataset.service === '2') {
+        entry.target.classList.remove('service-card-end-2');
+        entry.target.classList.add('service-card-start-2');
+      }
+    }
   });
 });
 const services = document.querySelectorAll('.service-card');
