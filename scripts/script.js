@@ -39,17 +39,25 @@ function playCurtain() {
   headerLogo.classList.remove('header-logo-show');
 
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  // dont lock scroll if user prefers reduced motion
+  // end animation early if user scrolls
   if (!prefersReducedMotion) {
-      document.body.style.overflow = 'hidden'; // Lock scroll
+      let animationTimeout = setTimeout(() => {
+          curtain.classList.add('slide-up');
+          setTimeout(() => curtain.style.display = 'none', 300);
+      }, 4000); // normal animation end
   
-      setTimeout(() => {
-          document.querySelector('.curtain').style.display = 'none';
-          document.body.style.overflow = ''; // Unlock scroll
-      }, 4000); // Match animation duration
+      // If user scrolls early → instantly end animation
+      const endCurtainEarly = () => {
+          clearTimeout(animationTimeout);
+          curtain.classList.add('slide-up');
+          headerLogo.classList.add('header-logo-show');
+          setTimeout(() => curtain.style.display = 'none', 300);
+          window.removeEventListener('scroll', endCurtainEarly);
+      };
+  
+      window.addEventListener('scroll', endCurtainEarly);
   } else {
-      // Instantly hide curtain without animation
-      document.querySelector('.curtain').style.display = 'none';
+      curtain.style.display = 'none'; // reduced motion: no animation
   }
   
 
